@@ -7,20 +7,42 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body>
-    <h1>Movie Search</h1>
+<body>
+  <main>
+    <nav>
+      <div class="sort-container">
+        <label for="sort-select">Sort By: </label>
+          <select id="sort-select">
+            <option value="popularity.desc">Popularity (High to Low)</option>
+            <option value="vote_average.desc">Rating (High to Low)</option>
+            <option value="release_date.desc">Release Date (Newest)</option>
+            <option value="release_date.asc">Release Date (Oldest)</option>
+          </select>
+      </div>
+    </nav>
+      <section>
+        
+        <h1>Movie Search</h1>
 
-    <input type="text" placeholder="Search for a movie..." id="searchInput" />
+        <input type="text" placeholder="Search for a movie..." id="searchInput" />
 
-    <button id="searchButton">Search</button>
-    <p id="status"></p>
-    <div id="movieList"></div>
+        <button id="searchButton">Search</button>
+        <p id="status"></p>
+        <div id="movieList"></div>
 
-    <script src="script.js"></script>
-    <div>
-      <figure class="background-img">
-        <img src="./assets/movie-background.jpg" />
-      </figure>
-    </div>
-  </body>
+        <script src="script.js"></script>
+        <div>
+          <figure class="background-img">
+          <img src="./assets/movie-background.jpg" />
+          </figure>
+        </div>
+      </section>
+  </main>
+  <footer>
+    <div class="footer__copyright">Copyright &copy; 2026 Don Lacer</div>
+  </footer>
+</body>
+
+  
+
 </html>
